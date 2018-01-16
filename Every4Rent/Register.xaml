@@ -1,0 +1,30 @@
+﻿<Window x:Class="Every4Rent.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Every4Rent"
+        mc:Ignorable="d"
+        Title="Create New User" Height="300" Width="550" Closing="Window_Closing">
+    <Grid>
+        <Label Content="Email*" HorizontalAlignment="Left" Margin="39,31,0,0" VerticalAlignment="Top" Width="51"/>
+        <Label Content="First Name*" HorizontalAlignment="Left" Margin="39,120,0,0" VerticalAlignment="Top"/>
+        <Label Content="Birth Date*" HorizontalAlignment="Left" Margin="39,89,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label Content="Password*" HorizontalAlignment="Left" Margin="39,63,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Last Name*" HorizontalAlignment="Left" Margin="39,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="Phone Number" HorizontalAlignment="Left" Margin="39,181,0,0" VerticalAlignment="Top"/>
+        <Label Content="Upload Image" HorizontalAlignment="Left" Margin="39,207,0,0" VerticalAlignment="Top"/>
+        <Button Content="Finish Registration" HorizontalAlignment="Left" Margin="39,249,0,0" VerticalAlignment="Top" Width="115" Click="Register_Click"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Height="23" Margin="140,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="FNameTB" HorizontalAlignment="Left" Height="23" Margin="140,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="LNameTB" HorizontalAlignment="Left" Height="23" Margin="140,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PhoneTB" HorizontalAlignment="Left" Height="23" Margin="140,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Browse Image" HorizontalAlignment="Left" Margin="140,214,0,0" VerticalAlignment="Top" Width="92" Click="BrowseImage_Click"/>
+        <PasswordBox x:Name="PassTB" HorizontalAlignment="Left" Margin="140,71,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="BrithdateBox" HorizontalAlignment="Left" Margin="140,95,0,0" VerticalAlignment="Top"/>
+        <Label Content="PayPal Email*" HorizontalAlignment="Left" Margin="283,31,0,0" VerticalAlignment="Top"/>
+        <Label Content="Paypal Password*" HorizontalAlignment="Left" Margin="283,63,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PPEmail" HorizontalAlignment="Left" Height="23" Margin="364,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="PPPassword" HorizontalAlignment="Left" Margin="385,71,0,0" VerticalAlignment="Top" Width="99"/>
+    </Grid>
+</Window>

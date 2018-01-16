@@ -1,0 +1,97 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Every4Rent
+{
+    public partial class PetsSearch : Form
+    {
+        string countryChoose = "";
+        string typeChoose = "";
+        int ageChoose = -1;
+        string sexChoose = "";
+        string startDate = "";
+        string startHour = "";
+        string endDate = "";
+        string endHour = "";
+        string selectedCurrency = "";
+        double maxPriceChooose = -1;
+        double minPriceChooose = -1;
+        string breedChoose = "";
+
+        public PetsSearch()
+        {
+            InitializeComponent();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)//choose currency
+        {
+            selectedCurrency = currnecy.Items[currnecy.SelectedIndex].ToString();
+        }
+
+        private void countryTxt_TextChanged(object sender, EventArgs e)//choose country
+        {
+            TextBox objTextBox = (TextBox)sender;
+            countryChoose = objTextBox.Text;
+        }
+
+        private void type_TextChanged(object sender, EventArgs e)//choose type
+        {
+            TextBox objTextBox = (TextBox)sender;
+            typeChoose = objTextBox.Text;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)//choose age
+        {
+            TextBox objTextBox = (TextBox)sender;
+            ageChoose = Convert.ToInt32(objTextBox.Text);
+        }
+
+        private void sexBox_TextChanged(object sender, EventArgs e)//choose sex
+        {
+            TextBox objTextBox = (TextBox)sender;
+            sexChoose = objTextBox.Text;
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)//choose start date
+        {
+            startHour = dateTimePicker1.Value.ToShortTimeString();
+            startDate = dateTimePicker1.Value.ToShortDateString();
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)//choose end date
+        {
+            endHour = dateTimePicker2.Value.ToShortTimeString();
+            endDate = dateTimePicker2.Value.ToShortDateString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)//search
+        {
+
+        }
+
+        private void MaxPrice_TextChanged(object sender, EventArgs e)//choose max price
+        {
+            TextBox objTextBox = (TextBox)sender;
+            maxPriceChooose = Convert.ToDouble(objTextBox.Text);
+        }
+
+        private void MinPrice_TextChanged(object sender, EventArgs e)//choose min price
+        {
+            TextBox objTextBox = (TextBox)sender;
+            minPriceChooose = Convert.ToDouble(objTextBox.Text);
+        }
+
+        private void breedTextBox_TextChanged(object sender, EventArgs e)//choose breed
+        {
+            TextBox objTextBox = (TextBox)sender;
+            breedChoose = objTextBox.Text;
+        }
+    }
+}

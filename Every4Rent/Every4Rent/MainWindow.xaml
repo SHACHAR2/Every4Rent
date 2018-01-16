@@ -1,0 +1,46 @@
+﻿<Window x:Class="Every4Rent.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Every4Rent"
+        mc:Ignorable="d"
+        Title="Everything4REnt" Height="350" Width="525">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="321" Margin="0,0,-0.333,-0.333" VerticalAlignment="Top" Width="519">
+            <TabItem Header="Login">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Email" HorizontalAlignment="Left" Height="24" Margin="79,40,0,0" VerticalAlignment="Top" Width="47"/>
+                    <Label Content="Password" HorizontalAlignment="Left" Margin="79,69,0,0" VerticalAlignment="Top" Width="69"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="153,44,0,0" TextWrapping="Wrap" Text="bla@bla.com" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+                    <PasswordBox HorizontalAlignment="Left" Margin="153,77,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Button Content="Login" HorizontalAlignment="Left" Margin="79,125,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Register">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Email" HorizontalAlignment="Left" Margin="39,31,0,0" VerticalAlignment="Top" Width="51"/>
+                    <Label Content="First Name" HorizontalAlignment="Left" Margin="39,120,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Birth Date" HorizontalAlignment="Left" Margin="39,89,0,0" VerticalAlignment="Top" Width="81"/>
+                    <Label Content="Password" HorizontalAlignment="Left" Margin="39,63,0,0" VerticalAlignment="Top" Width="71"/>
+                    <Label Content="Last Name" HorizontalAlignment="Left" Margin="39,150,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Phone Number" HorizontalAlignment="Left" Margin="39,181,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Upload Image" HorizontalAlignment="Left" Margin="39,207,0,0" VerticalAlignment="Top"/>
+                    <Button Content="Finish Registration" HorizontalAlignment="Left" Margin="39,249,0,0" VerticalAlignment="Top" Width="115" Click="Button_Click_1"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="140,35,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="140,124,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="140,154,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="140,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Button Content="Browse Image" HorizontalAlignment="Left" Margin="140,214,0,0" VerticalAlignment="Top" Width="92"/>
+                    <PasswordBox HorizontalAlignment="Left" Margin="140,71,0,0" VerticalAlignment="Top" Width="120"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="140,95,0,0" VerticalAlignment="Top"/>
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="EverySearch" IsEnabled="False">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
