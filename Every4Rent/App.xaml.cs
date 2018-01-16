@@ -18,7 +18,8 @@ namespace Every4Rent
             //base.OnStartup(e);
             
             var form = new Everything4rent();
-            form.Show();
+            //form.Show();
+            System.Windows.Forms.Application.Run(form);
         }
 
     }

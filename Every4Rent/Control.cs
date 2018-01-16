@@ -9,7 +9,7 @@ using System.Windows;
 namespace Every4Rent
 {
 
-    class Control
+    public class Control
     {
         Model m;
         public Control()

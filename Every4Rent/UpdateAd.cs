@@ -12,7 +12,7 @@ namespace Every4Rent
 {
     public partial class UpdateAd : Form
     {
-        PackageControler pc;
+        private PackageControler pc;
         string countryChoose = "";
         string startDate = "";
         string startHour = "";

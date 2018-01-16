@@ -8,7 +8,7 @@ using System.Windows;
 
 namespace Every4Rent
 {
-    class PackageControler
+    public class PackageControler
     {
         private PackageModel model;
         
